@@ -51,14 +51,22 @@
     </section>
   </main>
 
-  <script>
-    const toggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+  const menuLinks = document.querySelectorAll('#menu a');
 
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+
+  // Close menu when a menu link is clicked
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
     });
-  </script>
+  });
+</script>
   
 </body>
 </html>
