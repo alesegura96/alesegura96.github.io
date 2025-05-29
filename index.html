@@ -7,31 +7,58 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>𝗠𝗔𝗜𝗗𝗘𝗥</h1>
-      <p class="subtitle">𝗔𝗱𝗶𝗲𝘀𝘁𝗿𝗮𝗺𝗶𝗲𝗻𝘁𝗼 𝘆 𝗚𝘂𝗮𝗿𝗱𝗲𝗿í𝗮 𝗖𝗮𝗻𝗶𝗻𝗮</p>
-      <p class="tagline">Dog Day Care Center</p>
-    </header>
+  <header>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav id="menu" class="hidden">
+      <a href="#info">Info</a>
+      <a href="#prices">Precios</a>
+      <a href="#about">Sobre Mí</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
 
-    <section class="contact">
-      <p>📞 <strong>𝟼𝟷𝟼 𝟸𝟻𝟽 𝟷𝟹𝟷</strong></p>
+  <main>
+    <section class="hero">
+      <h1><strong>MAIDER</strong> | Adiestramiento y Guardería Canina</h1>
+      <p>Dog Day Care Center</p>
+      <p class="phone">📞 616 257 131</p>
     </section>
 
-    <section class="services">
+    <section id="info">
       <ul>
-        <li>🐾 𝙿𝚊𝚜𝚎𝚘𝚜</li>
-        <li>☀️ 𝙶𝚞𝚊𝚛𝚍𝚎𝚛í𝚊</li>
-        <li>🏠 𝙰𝚕𝚘𝚓𝚊𝚖𝚒𝚎𝚗𝚝𝚘</li>
-        <li>🗓 𝙱𝚘𝚗𝚘𝚜 𝚍𝚎 𝚙𝚊𝚜𝚎𝚘𝚜 𝚖𝚎𝚗𝚜𝚞𝚊𝚕𝚎𝚜</li>
-        <li>🦮 𝙼𝚘𝚍𝚒𝚏𝚒𝚌𝚊𝚌𝚒ó𝚗 𝚍𝚎 𝚌𝚘𝚗𝚍𝚞𝚌𝚝𝚊</li>
+        <li>🐾 Paseos</li>
+        <li>☀️ Guardería</li>
+        <li>🏠 Alojamiento</li>
+        <li>🗓 Bonos de paseos mensuales</li>
+        <li>🦮 Modificación de conducta</li>
       </ul>
     </section>
 
-    <section class="cta">
-      <p>𝙿𝚊𝚛𝚊 𝚊𝚝𝚎𝚗𝚍𝚎𝚛𝚝𝚎 𝚍𝚎 𝚖𝚊𝚗𝚎𝚛𝚊 𝚙𝚎𝚛𝚜𝚘𝚗𝚊𝚕𝚒𝚣𝚊𝚍𝚊 ⬇️</p>
-      <a href="https://wa.me/34616257131" target="_blank" class="whatsapp-btn">Escríbenos por WhatsApp</a>
+    <section id="prices">
+      <h2>Precios</h2>
+      <p>Contáctame para tarifas personalizadas y bonos mensuales.</p>
     </section>
-  </div>
+
+    <section id="about">
+      <h2>Sobre Mí</h2>
+      <p>Ofrezco atención personalizada y servicios profesionales de adiestramiento canino y cuidado diario.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contacto</h2>
+      <p>Para atenderte de manera personalizada ⬇️</p>
+      <a class="whatsapp" href="https://wa.me/34616257131" target="_blank">wa.me/34616257131</a>
+    </section>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+  
 </body>
 </html>
