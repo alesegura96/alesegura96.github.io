@@ -10,21 +10,20 @@
   <header>
     <div class="menu-toggle" id="menu-toggle">☰</div>
     <nav id="menu" class="hidden">
-      <a href="#info">Info</a>
-      <a href="#prices">Precios</a>
-      <a href="#about">Sobre Mí</a>
-      <a href="#contact">Contacto</a>
+      <a href="#" data-section="info">Info</a>
+      <a href="#" data-section="prices">Precios</a>
+      <a href="#" data-section="about">Sobre Mí</a>
+      <a href="#" data-section="contact">Contacto</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <h1><strong>MAIDER</strong> | Adiestramiento y Guardería Canina</h1>
-      <p>Dog Day Care Center</p>
-      <p class="phone">📞 616 257 131</p>
-    </section>
-
     <section id="info">
+      <div class="hero">
+        <h1><strong>MAIDER</strong> | Adiestramiento y Guardería Canina</h1>
+        <p>Dog Day Care Center</p>
+        <p class="phone">📞 616 257 131</p>
+      </div>
       <ul>
         <li>🐾 Paseos</li>
         <li>☀️ Guardería</li>
@@ -50,41 +49,39 @@
       <a class="whatsapp" href="https://wa.me/34616257131" target="_blank">616 25 71 31</a>
     </section>
   </main>
-
-<script>
-  const toggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
-  const menuLinks = document.querySelectorAll('#menu a');
-  const sections = document.querySelectorAll('main section');
-
-  // Toggle menu open/close
-  toggle.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-
-  // Show selected section only
-  menuLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault(); // prevent default anchor behavior
-      const targetId = link.getAttribute('data-section');
-
-      // Hide all sections
-      sections.forEach(section => section.classList.remove('active'));
-
-      // Show the selected section
-      const target = document.getElementById(targetId);
-      if (target) {
-        target.classList.add('active');
-      }
-
-      // Close the menu
-      menu.classList.add('hidden');
-    });
-  });
-
-  // Optionally show a default section on load
-  document.getElementById('info').classList.add('active');
-</script>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    const menuLinks = document.querySelectorAll('#menu a');
+    const sections = document.querySelectorAll('main section');
   
+    // Toggle menu open/close
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  
+    // Show selected section only
+    menuLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault(); // prevent default anchor behavior
+        const targetId = link.getAttribute('data-section');
+  
+        // Hide all sections
+        sections.forEach(section => section.classList.remove('active'));
+  
+        // Show the selected section
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.classList.add('active');
+        }
+  
+        // Close the menu
+        menu.classList.add('hidden');
+      });
+    });
+  
+    // Optionally show a default section on load
+    document.getElementById('info').classList.add('active');
+  </script>
 </body>
 </html>
