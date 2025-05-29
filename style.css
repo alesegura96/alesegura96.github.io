@@ -1,7 +1,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 25px;
+  padding: 25px;
   background: #f9f9f9;
   color: #333;
   scroll-behavior: smooth;
