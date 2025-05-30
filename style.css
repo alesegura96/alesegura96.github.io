@@ -1,7 +1,7 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 25px;
-  padding: 25px;
+  font-family: "Segoe UI", sans-serif;
+  margin: 5px;
+  padding: 5px;
   background: #f9f9f9;
   color: #333;
   scroll-behavior: smooth;
@@ -62,7 +62,7 @@ section {
   background-color: white;
   margin: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 section.active {
@@ -88,5 +88,3 @@ ul li {
   text-decoration: none;
   margin-top: 1rem;
 }
-
-
