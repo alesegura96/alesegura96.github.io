@@ -28,7 +28,7 @@ nav {
   flex-direction: column;
   background-color: #51a1d5;
   position: absolute;
-  top: 60px;
+  top: 100%;
   left: 0;
   right: 0;
   z-index: 999;
