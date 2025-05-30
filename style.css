@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #25d366;
+  background-color: #51a1d5;
   color: white;
   padding: 1rem;
   position: sticky;
@@ -26,7 +26,7 @@ header {
 nav {
   display: flex;
   flex-direction: column;
-  background-color: #25d366;
+  background-color: #51a1d5;
   position: absolute;
   top: 60px;
   left: 0;
@@ -81,7 +81,7 @@ ul li {
 
 .whatsapp {
   display: inline-block;
-  background-color: #25d366;
+  background-color: #51a1d5;
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
