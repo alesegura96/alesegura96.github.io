@@ -1,7 +1,7 @@
 body {
   font-family: "Segoe UI", sans-serif;
   margin: 5px;
-  padding: 5px;
+  padding: 25px;
   background: #f9f9f9;
   color: #333;
   scroll-behavior: smooth;
@@ -46,13 +46,13 @@ nav a {
 }
 
 .hero {
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   background-color: white;
 }
 
 .phone {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 0.5rem;
 }
 
@@ -71,12 +71,12 @@ section.active {
 
 ul {
   list-style: none;
-  padding: 25px;
+  padding: 1rem;
 }
 
 ul li {
-  margin: 0.5rem 0;
-  font-size: 1.1rem;
+  margin: 1rem;
+  font-size: 1rem;
 }
 
 .whatsapp {
