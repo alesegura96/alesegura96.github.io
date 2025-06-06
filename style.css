@@ -1,9 +1,13 @@
 body {
+  background-image: url('background_photo.jpg'); /* Replace with your image path */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Makes it fill container and crop */
+  background-attachment: fixed; /* Optional: keeps it fixed when scrolling */
   font-family: "Segoe UI", sans-serif;
   font-size: 18px;
   margin: 0px;
   padding: 0px;
-  background: #f9f9f9;
   color: #333;
   scroll-behavior: smooth;
 }
@@ -51,7 +55,7 @@ nav a {
   padding: 1rem;
   font-size: 1.5rem;
   text-align: center;
-  background-color: white;
+  background-color: #ffffff00;
 }
 
 .phone {
@@ -63,7 +67,7 @@ section {
   font-size: 1rem;
   display: none;
   padding: 1rem;
-  background-color: white;
+  background-color: #ffffffb3;
   margin: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
