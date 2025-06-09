@@ -32,7 +32,7 @@ header {
   color: white;
   padding: 1rem;
   top: 0;
-  position: relative;
+  position: sticky;
   z-index: 2;
   display: flex;
   justify-content: space-between;
