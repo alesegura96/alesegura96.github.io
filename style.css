@@ -1,5 +1,6 @@
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; /* Light 300 */
   font-size: 18px;
   margin: 0px;
   padding: 0px;
@@ -14,10 +15,8 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('background_photo.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-image: url('background_photo.jpg'); */ /* removed */
+  background-color: white; /* or any color you want */
   z-index: -1;
   pointer-events: none;
   will-change: transform;
@@ -40,6 +39,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative; /* allow absolute positioning of logo */
+}
+
+.logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%; /* logo container matches header height */
+  display: flex;
+  align-items: center; /* ensures vertical centering */
+}
+
+.logo {
+  height: 100%; /* logo fills header height */
+  width: auto;  /* keeps aspect ratio */
+  object-fit: contain;
 }
 
 .menu-toggle {
