@@ -121,11 +121,12 @@ ul li {
 /* --- Horizontal scrollable menu section --- */
 .scroll-menu-section {
   display: none; /* hidden by default; JS adds .active to show it */
-  padding: 0rem;
+  padding: 0.5rem 0;
+  margin: 0; 
   background-color: white;
   box-shadow: none;
-  margin: 1rem;
   text-align: center;
+  overflow: hidden;  
 }
 
 /* --- Horizontal nav inside that section --- */
@@ -138,8 +139,7 @@ ul li {
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
   gap: 0.5rem;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 1rem; 
   background-color: transparent;
   justify-content: center;
   scroll-padding-inline-start: 1rem;
