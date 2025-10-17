@@ -139,7 +139,7 @@ ul li {
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
   gap: 0.5rem;
-  padding: 0.5rem 0.75rem; 
+  padding: 0.5rem 0rem; 
   background-color: transparent;
   justify-content: start;
   scroll-padding-inline-start: 1rem;
@@ -184,3 +184,4 @@ ul li {
   }
 
 }
+
