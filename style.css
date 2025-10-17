@@ -139,9 +139,10 @@ ul li {
   white-space: nowrap;
   gap: 0.5rem;
   margin-top: 1rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   background-color: transparent;
   justify-content: center;
+  scroll-padding-inline-start: 1rem;
 }
 
 .scroll-menu a {
