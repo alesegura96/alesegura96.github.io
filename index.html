@@ -20,103 +20,20 @@
     </div>
 
     <nav id="menu" class="hidden">
-      <a href="#" data-section="info">Info</a>
-      <!-- <a href="#" data-section="collection">Colecciones</a> -->
+      <a href="#" data-section="collection">Colecciones</a>
       <a href="#" data-section="about">Sobre CARAVIAN</a>
       <a href="#" data-section="contact">Contacto</a>
     </nav>
   </header>
 
   <main>
-    <section id="info">
-      <div class="hero">
-        <h1><strong>CARAVIAN</strong> | Travel, experiences, phylosophy</h1>
-        <p>Discover our collection in:</p>
-        <p class="shop">Hutton Tenerife</p>
-      </div>
-    </section>
-
-    <section id="collection">
-      <h2>Servicios y Tarifas</h2>
-      <h3>Paseos Horas Sueltas</h3>
-      <table class="price-table">
-        <tr>
-          <td><strong>1 hora</strong></td>
-          <td>15€</td>
-        </tr>
-        <tr>
-          <td><strong>2 horas</strong></td>
-          <td>20€</td>
-        </tr>
-        <tr>
-          <td><strong>3 horas</strong></td>
-          <td>25€</td>
-        </tr>
-      </table>
-      <p>Fin de semana o festivo: +5€</p>
-      <h3 class="price-title">Bonos Mensuales</h3>
-      <table class="price-table">
-        <tr>
-          <td><strong>1 hora</strong></td>
-          <td>200€/mes</td>
-        </tr>
-        <tr>
-          <td><strong>2 horas</strong></td>
-          <td>250€/mes</td>
-        </tr>
-        <tr>
-          <td><strong>3 horas</strong></td>
-          <td>300€/mes</td>
-        </tr>
-      </table>
-      <p>(mañanas de lunes a viernes)</p>
-      <p>Perro extra: +100€/mes</p>
-      <h3 class="price-title">Adiestramientos</h3>
-      <table class="price-table">
-        <tr>
-          <td><strong>Sesión 1 hora</strong></td>
-          <td>60€</td>
-        </tr>
-        <tr>
-          <td><strong>Bono 5 sesiones</strong></td>
-          <td>250€</td>
-        </tr>
-      </table>
-      <h3 class="price-title">Guardería de Día</h3>
-      <table class="price-table">
-        <tr>
-          <td>27€/día</td>
-          <td>Festivo: 30€/día</td>
-        </tr>
-      </table>
-      <p>(máximo 8 horas)</p>
-      <p>*Más de 8 horas se cobrará día completo.</p>
-      <p>*Recogida y entrega suplemento de 15€.</p>
-      <p>Perro extra: +13€/día</p>
-      <h3 class="price-title">Alojamiento</h3>
-      <table class="price-table">
-        <tr>
-          <td>30€/noche</td>
-          <td>Festivo: 35€/noche</td>
-        </tr>
-      </table>
-      <p>(con salida a las 12:00 am)</p>
-      <p>
-        *Si la recogida es más tarde de la hora indicada se cobrará otra noche
-      </p>
-      <p>*Recogida y entrega suplemento de 15€.</p>
-      <p>Perro extra: +15€/noche</p>
-      <h3 class="price-title">Guardería Gatos y Exóticos</h3>
-      <table class="price-table">
-        <tr>
-          <td>20€/día</td>
-          <td>Festivo: 25€/día</td>
-        </tr>
-      </table>
-      <h3 class="price-title">Otros Servicios</h3>
-      <p><strong>-Visitas a domicilio</strong></p>
-      <p><strong>-Translados a veterinario</strong></p>
-      <p><strong>-Translados a peluquería canina</strong></p>
+    <section id="collection" class="scroll-menu-section">
+      <nav class="scroll-menu">
+        <a href="#tshirt">Camisetas</a>
+        <a href="#polo">Polos</a>
+        <a href="#hoody">Sudaderas</a>
+        <a href="#swim">Bañadores</a>
+      </nav>
     </section>
 
     <section id="about">
@@ -133,6 +50,7 @@
       <a class="whatsapp" href="https://www.instagram.com/caravian_official/" target="_blank">Instagram</a>
     </section>
   </main>
+
   <script>
     const toggle = document.getElementById("menu-toggle");
     const menu = document.getElementById("menu");
@@ -165,7 +83,7 @@
     });
 
     // Optionally show a default section on load
-    document.getElementById("info").classList.add("active");
+    document.getElementById("collection").classList.add("active");
   </script>
 </body>
 

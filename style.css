@@ -62,7 +62,9 @@ header {
   cursor: pointer;
 }
 
-nav {
+/* --- Header nav (vertical dropdown menu) --- */
+header nav,
+#menu {
   display: flex;
   flex-direction: column;
   background-color: #1ba8b1;
@@ -73,7 +75,7 @@ nav {
   z-index: 999;
 }
 
-nav a {
+#menu a {
   color: white;
   text-decoration: none;
   padding: 1rem;
@@ -82,19 +84,7 @@ nav a {
 }
 
 .hidden {
-  display: none;
-}
-
-.hero {
-  padding: 1rem;
-  font-size: 1.5rem;
-  text-align: center;
-  background-color: #ffffff00;
-}
-
-.shop {
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
+  display: none !important;
 }
 
 section {
@@ -128,29 +118,45 @@ ul li {
   font-size: 1rem;
 }
 
-.price-table {
-  width: 90%;
-  max-width: 300px;
-  margin: 0 auto;
-  border-collapse: collapse;
+/* --- Horizontal scrollable menu section --- */
+.scroll-menu-section {
+  display: none; /* hidden by default; JS adds .active to show it */
+  padding: 0rem;
+  background-color: white;
+  box-shadow: none;
+  margin: 1rem;
+  text-align: center;
 }
 
-.price-table td {
-  padding: 12px 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.price-table td:first-child {
-  text-align: left;
-}
-
-.price-table td:last-child {
-  text-align: right;
+/* --- Horizontal nav inside that section --- */
+.scroll-menu {
+  display: flex;
+  flex-direction: row;
+  position: static;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   white-space: nowrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+  background-color: transparent;
+  justify-content: center;
 }
 
-.price-title {
-  margin-top: 50px;
+.scroll-menu a {
+  flex: 0 0 auto;
+  padding: 0.75rem 1.25rem;
+  background-color: white;
+  color: #1ba8b1;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.scroll-menu a:hover {
+  background-color: #14878f;
+  color: white;
 }
 
 .whatsapp {
