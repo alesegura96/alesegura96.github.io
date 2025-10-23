@@ -122,7 +122,7 @@ ul li {
 .scroll-menu-section {
   display: none; /* hidden by default; JS adds .active to show it */
   padding: 0.5rem;
-  margin: 0 0.5rem;
+  margin: 0 0.75rem;
   background-color: white;
   box-shadow: none;
   text-align: center;
@@ -139,7 +139,7 @@ ul li {
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
   gap: 0.5rem;
-  padding: 0.5rem 0rem; 
+  padding: 0.5rem 1rem; 
   background-color: transparent;
   justify-content: start;
   scroll-padding-inline-start: 1rem;
@@ -147,7 +147,7 @@ ul li {
 
 .scroll-menu a {
   flex: 0 0 auto;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.25rem;
   background-color: white;
   color: #1ba8b1;
   text-decoration: none;
@@ -156,7 +156,7 @@ ul li {
 }
 
 .scroll-menu a:hover {
-  background-color: #1ba8b1;
+  background-color: #14878f;
   color: white;
 }
 
@@ -170,6 +170,72 @@ ul li {
   margin-top: 1rem;
 }
 
+
+/* Product grid */
+.product-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: start;
+  align-items: start;
+}
+
+/* Responsive grid columns */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* mobile: 2 per row */
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+
+/* Very wide desktop */
+@media (min-width: 1440px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+
+/* Each product item */
+.product-item {
+  text-align: center;
+}
+
+/* Scrollable images (mini-carousel) */
+.product-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 0.5rem;
+}
+
+.product-carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  flex: 0 0 auto;
+  object-fit: cover;
+}
+
+.product-caption {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #1ba8b1;
+}
+
+
 /* Tablet */
 @media (max-width: 1024px) {
   body {
@@ -182,7 +248,4 @@ ul li {
   body {
     font-size: 12px;
   }
-
 }
-
-
