@@ -86,27 +86,60 @@ const productData = {
     ],
     polo: [
         {
-            name: "White Polo",
+            name: "Polo Azul",
             images: [
-                "images/polo/polo1.jpg"
+                "images/polo/mauri1.jpg",
+                "images/polo/mauri2.jpg",
+                "images/polo/mauri3.jpg",
+                "images/polo/mauri4.jpg",
+                "images/polo/mauri5.jpg",
+            ]
+        },
+        {
+            name: "Polo Verde",
+            images: [
+                "images/polo/sergio1.jpg",
+                "images/polo/sergio2.jpg",
+                "images/polo/sergio3.jpg",
+                "images/polo/sergio4.jpg",
+                "images/polo/sergio5.jpg",
             ]
         }
     ],
     hoody: [
         {
-            name: "Grey Hoodie",
+            name: "Nautical",
             images: [
-                "images/hoody/hoody1.jpg",
-                "images/hoody/hoody2.jpg"]
+                "images/hoody/nautichood1.jpg",
+                "images/hoody/nautichood2.jpg"]
+        },
+        {
+            name: "Cafe Racer",
+            images: [
+                "images/hoody/caferacer1.jpg",
+                "images/hoody/caferacer2.jpg"]
         }
+
     ],
     swim: [
         {
-            name: "Beach Shorts",
+            name: "Caravian Blue",
             images: [
-                "images/swim/swim1.jpg",
-                "images/swim/swim2.jpg"]
-        }
+                "images/swim/blue.jpg"
+            ]
+        },
+        {
+            name: "Caravian Green",
+            images: [
+                "images/swim/green.jpg"
+            ]
+        },
+        {
+            name: "Caravian Collection",
+            images: [
+                "images/swim/collection.jpg"
+            ]
+        },
     ]
 };
 
