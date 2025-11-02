@@ -180,3 +180,11 @@ function renderProducts(items) {
         productGrid.appendChild(div);
     });
 }
+
+// Show "tshirt" category by default on page load
+window.addEventListener("DOMContentLoaded", () => {
+  const defaultLink = document.querySelector('.scroll-menu a[href="#tshirt"]');
+  if (defaultLink) {
+    defaultLink.click();
+  }
+});
