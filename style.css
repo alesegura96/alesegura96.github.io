@@ -211,7 +211,7 @@ ul li {
 /* Responsive grid columns */
 @media (max-width: 768px) {
   .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* mobile: 2 per row */
+    grid-template-columns: repeat(1, 1fr); /* mobile: 2 per row */
   }
 }
 
@@ -276,4 +276,5 @@ ul li {
   body {
     font-size: 12px;
   }
+
 }
