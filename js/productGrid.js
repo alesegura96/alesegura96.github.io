@@ -24,7 +24,7 @@ const productData = {
             ]
         },
         {
-            name: "Cafe Racer",
+            name: "Route 66",
             images: [
                 "images/tshirt/moto1.jpg",
                 "images/tshirt/moto2.jpg",
@@ -71,14 +71,14 @@ const productData = {
             ]
         },
         {
-            name: "Sushi Time",
+            name: "Japan",
             images: [
                 "images/tshirt/japan1.jpg",
                 "images/tshirt/japan2.jpg"           
             ]
         },
         {
-            name: "Whale Shark",
+            name: "Philippines",
             images: [
                 "images/tshirt/shark1.jpg"          
             ]
@@ -86,7 +86,7 @@ const productData = {
     ],
     polo: [
         {
-            name: "Polo Azul",
+            name: "Dark Blue",
             images: [
                 "images/polo/mauri1.jpg",
                 "images/polo/mauri2.jpg",
@@ -96,7 +96,7 @@ const productData = {
             ]
         },
         {
-            name: "Polo Verde",
+            name: "Green Aloe",
             images: [
                 "images/polo/sergio1.jpg",
                 "images/polo/sergio2.jpg",
@@ -114,7 +114,7 @@ const productData = {
                 "images/hoody/nautichood2.jpg"]
         },
         {
-            name: "Cafe Racer",
+            name: "Route 66",
             images: [
                 "images/hoody/caferacer1.jpg",
                 "images/hoody/caferacer2.jpg"]
@@ -123,19 +123,19 @@ const productData = {
     ],
     swim: [
         {
-            name: "Caravian Blue",
+            name: "Atlantic",
             images: [
                 "images/swim/blue.jpg"
             ]
         },
         {
-            name: "Caravian Green",
+            name: "Nature",
             images: [
                 "images/swim/green.jpg"
             ]
         },
         {
-            name: "Caravian Collection",
+            name: "Volcanic",
             images: [
                 "images/swim/collection.jpg"
             ]
